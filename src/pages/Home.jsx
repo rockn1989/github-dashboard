@@ -1,9 +1,9 @@
-import React from 'react';
+import React from "react";
 import { Link } from "react-router-dom";
 const Home = () => (
-  <div>
+  <main>
     <Link to="/cart">Detail</Link>
     <h1>Главная</h1>
-  </div>
+  </main>
 );
 export default Home;

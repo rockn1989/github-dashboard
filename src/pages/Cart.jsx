@@ -1,14 +1,13 @@
-import React from 'react';
-import {Link} from 'react-router-dom';
-
+import React from "react";
+import { Link } from "react-router-dom";
 
 const Cart = () => {
   return (
-    <div>
+    <section className="detail-cart">
       <Link to="/">Home</Link>
       <h1>Detail</h1>
-    </div>
+    </section>
   );
-}
+};
 
 export default Cart;
