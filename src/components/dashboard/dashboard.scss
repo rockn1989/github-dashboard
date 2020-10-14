@@ -1,0 +1,13 @@
+.dashboard-wrapper {
+  margin: 3em auto 2em;
+  max-width: $containerWidth;
+}
+
+.dashboard {
+  margin: 1.5em 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  overflow-x: hidden;
+}

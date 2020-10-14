@@ -1,5 +1,6 @@
 .header {
   background: $black;
+  flex-grow: 0;
   &__inner {
     padding: 0.75em 0;
   }

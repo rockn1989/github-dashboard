@@ -1,0 +1,30 @@
+.cart-item {
+  margin-bottom: 1.25em;
+  margin-left: 1.25em;
+  padding: 1.5em 0.8em;
+  width: 100%;
+  flex-grow: 0;
+  border: 1px solid $blue;
+}
+
+.cart-item__link {
+  word-break: break-word;
+}
+
+@media (min-width: 480px) {
+  .cart-item {
+    width: calc((100% / 2) - 1.25em);
+  }
+}
+
+@media (min-width: 768px) {
+  .cart-item {
+    width: calc((100% / 3) - 1.25em);
+  }
+}
+
+@media (min-width: 992px) {
+  .cart-item {
+    width: calc((100% / 4) - 1.25em);
+  }
+}
