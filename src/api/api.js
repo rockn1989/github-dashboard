@@ -10,7 +10,7 @@ export default class GithubApi {
                 method: 'GET',
                 headers: {
                     accept: 'application/vnd.github.v3+json',
-                    Authorization: "Token d2d3c32abcc80e9049de191eb51de1856f2e6873",
+                    Authorization: "Token 05bef57675b75768afdeb8d615c30bedad2979d5",
                 }
             });
 
@@ -23,10 +23,15 @@ export default class GithubApi {
 
         } catch(error) {
             console.log(error.message);
+            window.location.href = '/';
         }
     }
 
-    async getUsers(username) {
+    async getUsers(usersname) {
+        return this.getResource(`repos/${usersname}`);
+    }
+
+    async getUser(username) {
         return this.getResource(`repos/${username}`);
     }
 

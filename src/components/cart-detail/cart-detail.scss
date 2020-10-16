@@ -1,0 +1,101 @@
+.cart-detail {
+  padding: 3em 1.5em;
+}
+.cart-detail__inner {
+  padding: 24px 2%;
+  border: 1px solid $blue;
+}
+
+.cart-detail__header {
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid $blue;
+}
+
+.cart-detail__header > div {
+  margin-right: 2.5%;
+}
+
+.cart-detail__header > div:last-child {
+  margin: 0;
+}
+
+.cart-label {
+  margin: 20px 0 10px;
+  margin-right: 0.5em;
+  font-size: 1.2em;
+  line-height: 1.4em;
+  font-weight: bold;
+}
+
+.cart-detail__body {
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  border-bottom: 1px solid $blue;
+}
+
+.cart-detail__img {
+  position: relative;
+  width: 40%;
+  min-width: 200px;
+  max-height: 300px;
+  text-align: center;
+}
+
+.cart-detail__img img {
+  position: relative;
+  max-width: 100%;
+  z-index: 10;
+}
+
+.cart-detail__desc {
+  padding-left: 5%;
+  width: 60%;
+}
+
+.cart-detail__user-name {
+}
+
+.cart-detail__desc {
+  font-size: 0.9em;
+  line-height: 1.2em;
+}
+
+.item-list.avatars {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0;
+}
+
+.item-list.avatars li {
+  margin: 0;
+  padding-left: 0;
+  margin-right: 10px;
+  display: inline-block;
+  vertical-align: top;
+  width: 75px;
+  height: 75px;
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+
+.item-list.avatars li:before {
+  display: none;
+}
+
+.item-list.avatars li a {
+  display: block;
+}
+
+@media (min-width: 0) and (max-width: 767px) {
+  .cart-detail__img {
+    margin-bottom: 20px;
+    width: 100%;
+  }
+
+  .cart-detail__desc {
+    padding-left: 0;
+  }
+}

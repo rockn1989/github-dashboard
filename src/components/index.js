@@ -1,3 +1,4 @@
+export { default as Preloader } from "./preloader/Preloader";
 export { default as Header } from "./header/Header";
 export { default as Search } from "./search/Search";
 export { default as Dashboard } from "./dashboard/Dashboard";

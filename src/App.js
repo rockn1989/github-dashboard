@@ -14,7 +14,11 @@ function App() {
           <Header />
           <Switch>
             <Route path="/" exact component={Home} />
-            <Route path="/cart/:id?" exact component={Cart} />
+            <Route path="/cart/:name" render={({match, location, history}) => {
+              /* console.log(match, location, history) */
+              const {pathname} = location;
+              return <Cart itemName={pathname} />
+            }} />
             <Route component={PageNotFound} />
           </Switch>
         </Router>

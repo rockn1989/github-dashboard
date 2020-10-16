@@ -2,8 +2,10 @@
 @import "./fonts";
 @import-normalize;
 @import "./base";
+@import "../components/preloader/preloader";
 @import "../components/header/header";
 @import "../components/search/search";
 @import "../components/dashboard/dashboard";
 @import "../components/cart-item/cart-item";
+@import "../components/cart-detail/cart-detail";
 @import "../components/pagination/pagination";
